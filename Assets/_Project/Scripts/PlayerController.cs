@@ -69,7 +69,6 @@ namespace Platformer {
             // Adjust rotation to match movement direction
             var targetRotation = Quaternion.LookRotation(adjustedDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            transform.LookAt(transform.position + adjustedDirection);
         }
 
         void SmoothSpeed(float value) {

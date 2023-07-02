@@ -816,7 +816,7 @@ MonoBehaviour:
   freeLookVCam: {fileID: 1231305869}
   input: {fileID: 11400000, guid: f7ab98a195011a647891b660729cf6fc, type: 2}
   moveSpeed: 6
-  rotationSpeed: 15
+  rotationSpeed: 300
   smoothTime: 0.2
 --- !u!95 &740765275 stripped
 Animator:
