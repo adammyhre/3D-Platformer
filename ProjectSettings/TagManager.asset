@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FxTemporaire
   - Bullet
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - Water
   - UI
   - PostProcessing
-  - 
+  - Ground
   - 
   - 
   - 
