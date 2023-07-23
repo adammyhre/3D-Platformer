@@ -1583,7 +1583,7 @@ Transform:
   - {fileID: 2262710437917061821}
   - {fileID: 1799709077552608916}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &858966057309513080
 Animator:
@@ -1629,8 +1629,10 @@ MonoBehaviour:
   jumpForce: 10
   jumpDuration: 0.5
   jumpCooldown: 0
-  jumpMaxHeight: 2
   gravityMultiplier: 3
+  dashForce: 5
+  dashDuration: 1
+  dashCooldown: 2
 --- !u!114 &3483142070741522744
 MonoBehaviour:
   m_ObjectHideFlags: 0
