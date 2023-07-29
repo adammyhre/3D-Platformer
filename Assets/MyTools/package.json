@@ -1,0 +1,11 @@
+{
+  "name": "com.git-amend.setup",
+  "version": "1.0.0",
+  "displayName": "My Tools",
+  "description": "My Personal Tools",
+  "unity": "2022.3",
+  "author": {
+    "name": "Git-Amend",
+    "url": "https://github.com/adammyhre"
+  }
+}
