@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 2681240078734580367}
   - component: {fileID: 2675154767795016745}
   - component: {fileID: 3089049064213846833}
-  - component: {fileID: 6517859080534815008}
+  - component: {fileID: 1637601118899267938}
   m_Layer: 0
   m_Name: CollectibleChest
   m_TagString: Untagged
@@ -272,7 +272,7 @@ Transform:
   - {fileID: 2855372961792278726}
   - {fileID: 1813660833456659366}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2681240078734580367
 MonoBehaviour:
@@ -286,6 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c06ae70b8934e93b562fee575ba48b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 10
+  scoreChannel: {fileID: 11400000, guid: 5be5549e6adfeb44cb8033691830af27, type: 2}
 --- !u!114 &2675154767795016745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,23 +399,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6517859080534815008
-MonoBehaviour:
+--- !u!135 &1637601118899267938
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7644686725585342476}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8947491eb4ad849a0fc6ab60b3a939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDistance: 1
-  moveTime: 1
-  moveEase: 7
-  spinSpeed: 5
-  spinAxis: {x: 0, y: 1, z: 0}
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &5479454807681749922
 PrefabInstance:
   m_ObjectHideFlags: 0

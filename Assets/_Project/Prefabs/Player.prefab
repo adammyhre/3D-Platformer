@@ -1558,6 +1558,7 @@ GameObject:
   - component: {fileID: 3394828346188363063}
   - component: {fileID: 560623136208983495}
   - component: {fileID: 4235475172658720687}
+  - component: {fileID: 55368704493470844}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1583,7 +1584,7 @@ Transform:
   - {fileID: 2262710437917061821}
   - {fileID: 1799709077552608916}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &858966057309513080
 Animator:
@@ -1711,6 +1712,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e33f3fe8b544e98173025dd645bf78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &55368704493470844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161822160460304954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de3bb6b5ff241c9b1e4a283da4c4c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  playerHealthChannel: {fileID: 11400000, guid: 5dbe2b592ca6d5c469a73b46c987eb53,
+    type: 2}
 --- !u!1 &5259561337465795177
 GameObject:
   m_ObjectHideFlags: 0

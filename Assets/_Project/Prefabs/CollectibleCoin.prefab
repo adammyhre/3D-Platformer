@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5653340031189667857}
   - component: {fileID: 8037423248711083930}
   - component: {fileID: 6592708651714518848}
-  - component: {fileID: 1367806823804665248}
   m_Layer: 0
   m_Name: CollectibleCoin
   m_TagString: Untagged
@@ -160,23 +159,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1367806823804665248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3318955356109250263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8947491eb4ad849a0fc6ab60b3a939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDistance: 1
-  moveTime: 1
-  moveEase: 13
-  spinSpeed: 0.5
-  spinAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &8507515479793124438
 GameObject:
   m_ObjectHideFlags: 0
