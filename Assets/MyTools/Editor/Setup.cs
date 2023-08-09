@@ -12,8 +12,7 @@ namespace MyTools {
     public static class Setup {
         [MenuItem("Tools/Setup/Create Default Folders")]
         public static void CreateDefaultFolders() {
-            Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "Prefabs", "ScriptableObjects",
-                "Scripts", "Settings");
+            Folders.CreateDefault("_Project", "Animation", "Art", "Materials", "Prefabs", "Scripts/ScriptableObjects", "Scripts/UI");
             Refresh();
         }
 
@@ -47,11 +46,22 @@ namespace MyTools {
 
         static class Folders {
             public static void CreateDefault(string root, params string[] folders) {
-                var fullpath = Combine(Application.dataPath, root);
+                var fullpath = Path.Combine(Application.dataPath, root);
+                if (!Directory.Exists(fullpath)) {
+                    Directory.CreateDirectory(fullpath);
+                }
                 foreach (var folder in folders) {
-                    var path = Combine(fullpath, folder);
-                    if (!Exists(path)) {
-                        CreateDirectory(path);
+                    CreateSubFolders(fullpath, folder);
+                }
+            }
+    
+            private static void CreateSubFolders(string rootPath, string folderHierarchy) {
+                var folders = folderHierarchy.Split('/');
+                var currentPath = rootPath;
+                foreach (var folder in folders) {
+                    currentPath = Path.Combine(currentPath, folder);
+                    if (!Directory.Exists(currentPath)) {
+                        Directory.CreateDirectory(currentPath);
                     }
                 }
             }
